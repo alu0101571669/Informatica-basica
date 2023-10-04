@@ -2,5 +2,6 @@
 using namespace std;
 
 int main() {
-   cout << 7283 + 1296 << endl;
+  cout << 7283 + 1296 << endl;
+  return 0;
 }
