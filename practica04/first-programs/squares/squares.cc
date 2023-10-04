@@ -18,7 +18,7 @@ int main(int argc, char *argv []) {
     double cuadrado = pow(numeros, 2);
     fichero_salida << cuadrado << endl;
   }
-  //Cerramos los ficheros
+  // Cerramos los ficheros
   fichero_entrada.close();
   fichero_salida.close();
 
