@@ -9,7 +9,7 @@ using namespace std;
   * Grado en Ingeniería Informática
   * Informática Básica 2023-2024
   *
-  * @file maximum_of_three_integer_numbers.cc
+  * @file harmonic_numbers_1.cc
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 20/10/2023
   * @brief Programa que calcula el número harmónico
