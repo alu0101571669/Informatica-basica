@@ -20,7 +20,7 @@ int main() {
   double division, suma;
   cin >> numero;
   for(int it = 1; it <= numero; it++) {
-    division = 1.0/it;
+    division = 1.0 / it;
     suma += division;
   }
   cout << fixed << setprecision(4) << suma << endl;
