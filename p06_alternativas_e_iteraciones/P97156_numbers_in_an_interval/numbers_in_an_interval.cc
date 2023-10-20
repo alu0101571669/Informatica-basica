@@ -18,6 +18,7 @@ int main() {
   int number1, number2;
   cin >> number1 >> number2;
   if(number1 > number2) {
+    cout << endl;
     exit(EXIT_SUCCESS);
   }
   for(int it = number1; it <= number2 -1; it++) {
