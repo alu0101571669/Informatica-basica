@@ -25,7 +25,7 @@ int main() {
     mi_vector.push_back(resto); // Almacenamos los digitos binarios en el vector
     decimal = cociente;
   }
-  for(int it = 0; it < mi_vector.size(); it++) { // Recorremos el vector
+  for(int it = mi_vector.size() - 1; it >= 0; it--) { // Recorremos el vector
     cout << mi_vector[it];
   }
   cout << endl;
