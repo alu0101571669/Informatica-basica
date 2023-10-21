@@ -1,5 +1,7 @@
 #include <iostream>
+#include <vector>
 #include <cmath>
+#include <string>
 
 using namespace std;
 
@@ -16,20 +18,23 @@ using namespace std;
 */
 
 int main() {
-  int binario, decimal, exponente{0}, save_binario, digito, suma_de_digitos{0};
+  string binario;
+  int numero, suma_de_numeros{0}, exponente{0};
+  vector<char> mi_vector;
   cin >> binario;
-  save_binario = binario;
-  while(save_binario != 0) {
-    save_binario /= 10;
+  for(const char simbolo : binario) {
+    if(simbolo != '0' || simbolo != '1') { // Si los simbolos no son 0 o 1 salir del programa
+      cout << "Wrong Input" << endl;
+      exit(EXIT_SUCCESS);
+    }
+    else {
+      mi_vector.push_back(simbolo); // Introducimos los símbolos binarios
+    }
+  }
+  for(int it = mi_vector.size() - 1; it >= 0; it--) {
+    numero = static_cast<int>(mi_vector[it] - '0'); // Convierto el char a entero
+    suma_de_numeros += numero * pow(2, exponente);
     exponente++;
   }
-  save_binario = binario;
-  for(int it = exponente - 1; it >= 0; it--) {
-    digito = save_binario % 10;
-    decimal = digito * pow(2, it);
-    suma_de_digitos += decimal;
-    save_binario /= 10;
-  }
-  cout << suma_de_digitos << endl;
-  return 0;
+  cout << suma_de_numeros << endl;
 }

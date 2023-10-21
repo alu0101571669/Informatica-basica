@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -15,15 +16,17 @@ using namespace std;
 */
 
 int main() {
-  int decimal, cociente, resto;
+  int decimal, resto, cociente;
+  vector<int> mi_vector;
   cin >> decimal;
-
-  while(decimal > 0) {
-    resto = decimal % 2;
+  while(decimal != 0) {
     cociente = decimal / 2;
-    cout << resto;
+    resto = decimal % 2;
+    mi_vector.push_back(resto); // Almacenamos los digitos binarios en el vector
     decimal = cociente;
   }
+  for(int it = 0; it < mi_vector.size(); it++) { // Recorremos el vector
+    cout << mi_vector[it];
+  }
   cout << endl;
-  return 0;
 }
