@@ -8,22 +8,20 @@ using namespace std;
   * Grado en Ingeniería Informática
   * Informática Básica 2023-2024
   *
-  * @file decimal_to_binary.cc
+  * @file leap_year.cc
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 21/10/2023
-  * @brief Programa que convierte un número decimal en binario
+  * @brief Programa que te dice si un anyo es bisiesto
 */
 
 int main() {
-  int decimal, cociente, resto;
-  cin >> decimal;
-
-  while(decimal > 0) {
-    resto = decimal % 2;
-    cociente = decimal / 2;
-    cout << resto;
-    decimal = cociente;
+  int anyo;
+  cin >> anyo;
+  if(anyo % 4 == 0 && anyo % 100 != 0 || anyo % 400 == 0) {
+    cout << "YES" << endl;
   }
-  cout << endl;
+  else {
+    cout << "NO" << endl;
+  }
   return 0;
 }
