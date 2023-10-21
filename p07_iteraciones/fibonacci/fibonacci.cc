@@ -16,8 +16,8 @@ using namespace std;
 
 int main() {
   int numero, first, second, suma;
-  first = 0; // Primer número de la serie de fibonacci
-  second = 1;
+  first = 0; // Primer número de la sucesión de fibonacci
+  second = 1; // Segundo número de la sucesión de fibonacci
   cin >> numero;
   for(int it = 0; it < numero; it++) {
     cout << first << " ";
