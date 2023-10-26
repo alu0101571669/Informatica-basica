@@ -15,15 +15,33 @@ using namespace std;
   * @brief Programa que suma los dígitos de un número
 */
 
-int main() {
-  int numero, digito;
-  int suma = 0;
-  cin >> numero;
-  while(numero != 0) {
+void PrintProgramPurpose() {
+  cout << "Programa que suma los digitos de un número entero" << endl;
+  cout << "Número? ";
+}
+
+/**
+ * @brief Calcular la suma de los digitos del nñumero
+ * @param numero Número para sumarle los digitos
+ * @return Suma de los dígitos
+*/
+
+int SumOfDigits(int numero) {
+  int suma{0};
+  int digito;
+  while (numero != 0) {
     digito = numero % 10;
     suma += digito;
     numero /= 10;
   }
-  cout << suma << endl;
+  return suma;
+}
+
+int main() {
+  int numero;
+  PrintProgramPurpose();
+  cin >> numero;
+  int suma = SumOfDigits(numero);
+  cout << "Resultado: " << suma << endl;
   return 0;
 }
