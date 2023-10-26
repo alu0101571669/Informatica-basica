@@ -14,14 +14,28 @@ using namespace std;
   * @brief Programa que te dice si un anyo es bisiesto
 */
 
+void PrintProgramPurpose() {
+  cout << "Programa que te indica si un año es bisiesto o no" << endl;
+  cout << "Año a comprobar: ";
+}
+
+/**
+ * @brief Verifica que el año sea bisiesto
+ * @param anyo Año a comprobar
+ * @return true en caso de que sea bisiesto
+*/
+
+bool IsLeapYear(int anyo) {
+  if (anyo % 4 == 0 && anyo % 100 != 0 || anyo % 400 == 0) {
+    return true;
+  }
+  return false;
+}
+
 int main() {
   int anyo;
+  PrintProgramPurpose();
   cin >> anyo;
-  if(anyo % 4 == 0 && anyo % 100 != 0 || anyo % 400 == 0) {
-    cout << "YES" << endl;
-  }
-  else {
-    cout << "NO" << endl;
-  }
+  cout << (IsLeapYear(anyo) ? "YES" : "NO") << endl;
   return 0;
 }
