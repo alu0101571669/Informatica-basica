@@ -1,7 +1,5 @@
 #include <iostream>
-#include <vector>
 #include <cmath>
-#include <string>
 
 using namespace std;
 
@@ -17,24 +15,54 @@ using namespace std;
   * @brief Programa que convierte un número binario en decimal
 */
 
+void PrintProgramPurpose() {
+  cout << "Programa para calcular el número decimal de un binario" << endl;
+  cout << "Binario: ";
+}
+
+/**
+ * @brief Comprobar que un número sea binario
+ * @param binario Número binario a comprobar
+ * @return true en caso de que sea cierto y false en caso de falso
+*/
+
+bool IsBinary(int binario) {
+  while (binario > 0) {
+    if(binario % 10 > 1) {
+      return false;
+    }
+    binario /= 10;
+  }
+  return true;
+}
+
+/**
+ * @brief Calcular el número decimal correpondiente al binario
+ * @param binario Binario a convertir en decimal
+ * @return Número decimal
+*/
+
+int ToDecimal(int binario) {
+  int decimal = 0;
+  int temp = binario;
+  while (temp > 0) {
+    int ultimo_digito = temp % 10;
+    temp /= 10;
+    decimal += ultimo_digito * pow(2, temp);
+  }
+  return decimal;
+}
+
 int main() {
-  string binario;
-  int numero, suma_de_numeros{0}, exponente{0};
-  vector<char> mi_vector;
+  PrintProgramPurpose();
+  int binario, decimal;
   cin >> binario;
-  for(const char simbolo : binario) {
-    if(simbolo != '0' || simbolo != '1') { // Si los simbolos no son 0 o 1 salir del programa
-      cout << "Wrong Input" << endl;
-      exit(EXIT_SUCCESS);
-    }
-    else {
-      mi_vector.push_back(simbolo); // Introducimos los símbolos binarios
-    }
+  decimal = ToDecimal(binario);
+  if(IsBinary(binario)) {
+    cout << decimal << endl;
   }
-  for(int it = mi_vector.size() - 1; it >= 0; it--) {
-    numero = static_cast<int>(mi_vector[it] - '0'); // Convierto el char a entero
-    suma_de_numeros += numero * pow(2, exponente);
-    exponente++;
+  else {
+    cout << "Wrong Imput" << endl;
   }
-  cout << suma_de_numeros << endl;
+  return 0;
 }

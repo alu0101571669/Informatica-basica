@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <bitset>
 
 using namespace std;
 
@@ -15,18 +15,34 @@ using namespace std;
   * @brief Programa que convierte un número decimal en binario
 */
 
+void PrintProgramPurpose() {
+  cout << "Programa que calcula el binario de un número decimal" << endl;
+  cout << "Número: ";
+}
+
+/**
+ * @brief Calcular el binario de un número decimal
+ * @param decimal Número que se va a convertir en binario
+*/
+
+void ToBinary(int decimal) {
+  int binary = 0;
+  int i = 1;
+  while (decimal > 0) {
+    int resto = decimal % 2; // Calcular el resto
+    decimal /= 2;
+    if (resto == 1) {
+      binary += i;
+    }
+    i *= 10; // Multiplicar por la base
+  }
+  cout << binary << endl;
+}
+
 int main() {
-  int decimal, resto, cociente;
-  vector<int> mi_vector;
+  int decimal;
+  PrintProgramPurpose();
   cin >> decimal;
-  while(decimal != 0) {
-    cociente = decimal / 2;
-    resto = decimal % 2;
-    mi_vector.push_back(resto); // Almacenamos los digitos binarios en el vector
-    decimal = cociente;
-  }
-  for(int it = mi_vector.size() - 1; it >= 0; it--) { // Recorremos el vector
-    cout << mi_vector[it];
-  }
-  cout << endl;
+  ToBinary(decimal);
+  return 0;
 }
