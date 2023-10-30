@@ -21,7 +21,6 @@ int main() {
   for(int it = 1; it <= numero; it++) {
     cuadrado = pow(it, 2);
     suma_de_cuadrados += cuadrado;
-
   }
   cout << suma_de_cuadrados << endl;
   return 0;
