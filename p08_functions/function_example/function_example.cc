@@ -37,7 +37,7 @@ double Fuction(double x, double y, double t) {
 
 int main(int argc, char* argv[]) {
   PrintProgramPurpose();
-  int x, y, t;
+  double x, y, t;
   x = stod(argv[1]); // Valor de x
   y = stod(argv[2]); // Valor de y
   t = stod(argv[3]); // Valor de t
