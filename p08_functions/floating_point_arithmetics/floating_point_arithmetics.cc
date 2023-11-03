@@ -44,7 +44,7 @@ void PrintProgramPurpose() {
 */
 
 bool AreEqual(const double number1, const double number2, const double epsilon = 1e-7) {
-  return abs(number1 - number2) < epsilon;
+  return fabs(number1 - number2) < epsilon;
 }
 
 int main(int argc, char* argv[]) {
