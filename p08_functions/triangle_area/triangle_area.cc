@@ -4,6 +4,18 @@
 
 using namespace std;
 
+/*
+  * Universidad de La Laguna
+  * Escuela Superior de Ingeniería y Tecnología
+  * Grado en Ingeniería Informática
+  * Informática Básica 2023-2024
+  *
+  * @file triangle_area.cc
+  * @author Franco Alla alu0101571669@ull.edu.es
+  * @date 03/11/2023
+  * @brief Programa que comprueba si los lados de un triángulo que se introducen forman un triángulo válido, y si es así calcular su área según la fórmula de Herón
+*/
+
 /**
  * @brief Funcíon que comprueba que se han introducido los argumentos correctos
  * @param argc Número de parametros
