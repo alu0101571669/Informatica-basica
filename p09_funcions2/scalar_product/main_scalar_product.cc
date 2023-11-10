@@ -37,7 +37,7 @@ int main () {
   cout << "Vector 1: ";
   PrintVector(vector1);
   // Imprimo el vector 2
-  cout << "Vector 2; ";
+  cout << "Vector 2: ";
   PrintVector(vector2);
   // Comprobar que la dimensión de ambos vectores sea la misma
   if (IsEqual(vector1.size(), vector2.size())) {
