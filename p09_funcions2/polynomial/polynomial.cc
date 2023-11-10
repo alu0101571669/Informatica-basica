@@ -62,6 +62,6 @@ int main() {
   PrintPoly(polinomio);
   cout << "Valor a calcular: ";
   cin >> value;
-  cout << "Imagen para el valor " << value << ": " << Polynomial(polinomio, value) << endl;
+  cout << "Valor del polinomio: " << Polynomial(polinomio, value) << endl;
   return 0;
 }

@@ -1,4 +1,7 @@
-#include "capitalize_vowels.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 /*
   * Universidad de La Laguna

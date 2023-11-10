@@ -1,11 +1,11 @@
 # Compilación
 main:
 	@echo "Compilando ficheros..."
-	g++ -g capitalize_vowels.cc -o capitalize_vowels
+	g++ -g approximate_root.cc -o approximate_root
 
 .PHONY: clean
 
 # Eliminar archivos
 clean:
 	@echo "Eliminando ficheros compilados..."
-	rm -f capitalize_vowels
+	rm -f approximate_root
