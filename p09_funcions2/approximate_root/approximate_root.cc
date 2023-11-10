@@ -1,8 +1,4 @@
-#include <iostream>
-#include <cmath>
-#define EPSILON 1e-4
-
-using namespace std;
+#include "approximate_root.h"
 
 /*
   * Universidad de La Laguna
@@ -13,7 +9,7 @@ using namespace std;
   * @file approximate_root.cc
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 09/11/2023
-  * @brief Programa que calcula la raíz cuadrada de un número
+  * @brief Implementación de las funciones del programa
 */
 
 /**
@@ -43,12 +39,4 @@ double Approximate(int number) {
     delta *= -0.5;
   }
   return root;
-}
-
-int main() {
-  int numero;
-  cout << "Introduce un número para calcular su raíz cuadrada: ";
-  cin >> numero;
-  cout << "Raíz cuadrada del número: " << Approximate(numero) << endl;
-  return 0;
 }

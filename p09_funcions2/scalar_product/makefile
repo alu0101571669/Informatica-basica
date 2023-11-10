@@ -1,7 +1,7 @@
 # Compilación
 main:
 	@echo "Compilando ficheros..."
-	g++ -g scalar_product.cc -o scalar_product
+	g++ -g main_scalar_product.cc scalar_product.cc -o scalar_product
 
 .PHONY: clean
 

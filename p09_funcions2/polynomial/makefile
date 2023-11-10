@@ -1,7 +1,7 @@
 # Compilación
 main:
 	@echo "Compilando ficheros..."
-	g++ -g polynomial.cc polynomial.h -o polynomial
+	g++ -g polynomial.cc main_polynomial.cc -o polynomial
 
 .PHONY: clean
 

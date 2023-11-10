@@ -1,8 +1,4 @@
-#include <iostream>
-#include <cmath>
-#define EPSILON 1e-4
-
-using namespace std;
+#include "approximate_root.h"
 
 /*
   * Universidad de La Laguna
@@ -10,10 +6,10 @@ using namespace std;
   * Grado en Ingeniería Informática
   * Informática Básica 2023-2024
   *
-  * @file approximate_root.h
+  * @file approximate_root.cc
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 09/11/2023
-  * @brief Programa que calcula la raíz cuadrada de un número
+  * @brief Implementación de las funciones del programa
 */
 
 /**

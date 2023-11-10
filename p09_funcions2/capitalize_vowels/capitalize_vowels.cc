@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include "capitalize_vowels.h"
 
 /*
   * Universidad de La Laguna
@@ -12,7 +9,7 @@ using namespace std;
   * @file capitalize_vowels.cc
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 09/11/2023
-  * @brief Programa que convierte las vocales en mayúsculas y las consonantes en minúsculas de una cadena proporcionada
+  * @brief Implementación de las funciones del programa
 */
 
 /**
@@ -31,14 +28,4 @@ string ChangeString(string& mi_cadena) {
     }
   }
   return mi_cadena;
-}
-
-int main(int argc, char* argv[]) {
-  if (argc != 2) {
-    cout << "Se debe de introducir una cadena" << endl;
-    exit(EXIT_SUCCESS);
-  }
-  string cadena = argv[1];
-  cout << "Cadena modificada: " << ChangeString(cadena) << endl;
-  return 0;
 }

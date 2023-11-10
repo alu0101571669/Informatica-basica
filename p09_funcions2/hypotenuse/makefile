@@ -1,7 +1,7 @@
 # Compilación
 main:
 	@echo "Compilando ficheros..."
-	g++ -g hypotenuse.cc approximate_root.h -o hypotenuse
+	g++ -g approximate_root.cc hypotenuse.cc -o hypotenuse
 
 .PHONY: clean
 

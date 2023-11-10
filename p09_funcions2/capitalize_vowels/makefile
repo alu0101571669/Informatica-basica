@@ -1,7 +1,7 @@
 # Compilación
 main:
 	@echo "Compilando ficheros..."
-	g++ -g capitalize_vowels.cc -o capitalize_vowels
+	g++ -g main_capitalize_vowels.cc capitalize_vowels.cc -o capitalize_vowels
 
 .PHONY: clean
 

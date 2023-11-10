@@ -13,6 +13,7 @@ using namespace std;
   * @file polynomial.h
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 09/11/2023
+  * @brief Declaración de las funciones del programa
 */
 
 int Polynomial(vector<int>&, int); // Realiza el polynomio
