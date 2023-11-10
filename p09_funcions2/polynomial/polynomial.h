@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -9,11 +10,10 @@ using namespace std;
   * Grado en Ingeniería Informática
   * Informática Básica 2023-2024
   *
-  * @file scalar_product.h
+  * @file polynomial.h
   * @author Franco Alla alu0101571669@ull.edu.es
   * @date 09/11/2023
 */
 
-double ScalarProduct(vector<double>&, vector<double>&); // Calcular el producto escalar de los vectores
-bool IsEqual(int, int); // Comprobar que el tamaño de los vectores es el mismo
-void PrintVector(vector<double>&); // Imprimir los vectores
+int Polynomial(vector<int>&, int); // Realiza el polynomio
+void PrintPoly(vector<int>&); // Imprimir el polinomio
