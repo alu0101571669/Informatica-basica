@@ -18,20 +18,20 @@ using namespace std;
 int main() {
   vector<int> numeros;
   int digito, tam; // Tamaño del vector
-    while (cin >> tam) {
-      // Relleno el vector
-      while (tam != 0) {
-        cin >> digito;
-        numeros.push_back(digito);
-        tam--;
+  while (cin >> tam) {
+    // Relleno el vector
+    while (tam != 0) {
+      cin >> digito;
+      numeros.push_back(digito);
+      tam--;
+    }
+    // Imprimo la secuencia de números al revés
+    for (int i = numeros.size() - 1; i >= 0; i--) {
+      cout << numeros[i];
+      if (i > 0) {
+        cout << " ";
       }
-      // Imprimo el vector la secuencia de números al revés
-      for (int i = numeros.size() - 1; i >= 0; i--) {
-        cout << numeros[i];
-        if (i > 0) {
-          cout << " ";
-        }
-      }
+    }
     cout << endl; // Carácter especial y salto de línea
     numeros.clear(); // Eliminar el vector
   }
