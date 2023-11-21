@@ -3,7 +3,17 @@
 
 using namespace std;
 
-
+/*
+  * Universidad de La Laguna
+  * Escuela Superior de Ingeniería y Tecnología
+  * Grado en Ingeniería Informática
+  * Informática Básica 2023-2024
+  *
+  * @file programa2.cc
+  * @author Franco Alla alu0101571669@ull.edu.es
+  * @date 20/11/2023
+  * @brief Programa que comprueba que algún elemento de un vector es igual a la suma del resto de elementos
+*/
 
 int main() {
   int num, digito, suma;
@@ -21,8 +31,10 @@ int main() {
       suma = 0;
       digito = *it;
       // Recorremos los otros elementos
-      for (auto it2 = next(it); it2 != secuencia.end(); it2++) {
-        suma += *it2;
+      for (auto it2 = secuencia.begin(); it2 != secuencia.end(); it2++) {
+        if (digito != *it2) {
+          suma += *it2;
+        }
       }
       // Comprobar si la suma de los otros elementos del vector coinciden con el digito, y si es así, parar
       if (digito == suma) {
