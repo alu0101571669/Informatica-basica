@@ -4,6 +4,18 @@
 
 using namespace std;
 
+/*
+  * Universidad de La Laguna
+  * Escuela Superior de Ingeniería y Tecnología
+  * Grado en Ingeniería Informática
+  * Informática Básica 2023-2024
+  *
+  * @file words.cc
+  * @author Franco Alla alu0101571669@ull.edu.es
+  * @date 25/11/2023
+  * @brief Programa que vuelca las palabras de un fichero en distintos ficheros según su letra inicial
+*/
+
 /**
  * @brief Función que crear el fichero para cada palabra
  * @param palabra Palabra necesaria para crear el fichero
