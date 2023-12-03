@@ -59,7 +59,6 @@ istream& operator>>(istream& is, Complejo& parte) {
 */
 
 ostream& operator<<(ostream& os, Complejo& parte) {
-  os << "Número complejo: ";
   if (parte.imaginaria_ < 0) {
     os << parte.real_ << " - " << parte.imaginaria_ * -1 << "i" << endl;
   }
