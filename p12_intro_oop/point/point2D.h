@@ -22,6 +22,7 @@ class Point2D {
   void Move(double, double); // Cambiar las coordenadas del punto
   double Distance(Point2D&); // Calcular la distancia entre 2 puntos
   Point2D Middle(Point2D&);
+  
   private: // atributos privados de la clase
   int x_;
   int y_;
