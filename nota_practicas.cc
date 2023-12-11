@@ -17,9 +17,10 @@ int main(int argc, char* argv[]) {
     porcentaje /= 100; // Pasar a porcentaje
     ponderacion = porcentaje * nota; // Nota ponderada
     sumatorio_porcentajes += porcentaje; // Sumatorio de todos los porcentajes
-    sumatorio_ponderaciones += ponderacion;
+    sumatorio_ponderaciones += ponderacion; // Sumatorio de las ponderaciones
   }
-  const double resultado = sumatorio_ponderaciones / sumatorio_porcentajes;
+  const double resultado = sumatorio_ponderaciones / sumatorio_porcentajes; // Resultado
+  // Mostrar la nota por pantalla
   cout << "Nota: " << resultado << endl;
   if (resultado > 5.00) {
     cout << "FELICIDADES!!!" << endl;
