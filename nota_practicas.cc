@@ -21,5 +21,11 @@ int main(int argc, char* argv[]) {
   }
   const double resultado = sumatorio_ponderaciones / sumatorio_porcentajes;
   cout << "Nota: " << resultado << endl;
+  if (resultado > 5.00) {
+    cout << "FELICIDADES!!!" << endl;
+  }
+  else {
+    cout << "NO TE RINDAS!!!" << endl;
+  }
   return 0;
 }
