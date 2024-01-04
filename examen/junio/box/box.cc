@@ -20,7 +20,7 @@ Box::Box(double longitud, double ancho, double altura) {
 */
 
 bool Box::operator==(Box& type) {
-  return (Longitud() == type.longitud_ && Ancho() == type.ancho_ && Altura() == altura_);
+  return (Longitud() == type.longitud_ && Ancho() == type.ancho_ && Altura() == type.altura_);
 }
 
 /**
