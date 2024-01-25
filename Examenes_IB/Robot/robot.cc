@@ -60,7 +60,7 @@ void robot::Robot::GirarIzquierda() {
 void robot::Robot::Avanzar() {
   int eje_x = posicion_.GetX();
   int eje_y = posicion_.GetY();
-  
+
   switch (direccion_) {
     case Direccion::NORTE:
       posicion_.SetY(eje_y++);
@@ -75,6 +75,7 @@ void robot::Robot::Avanzar() {
       posicion_.SetX(eje_x--);
       break;
   }
+  
   cansancio_++;
 }
 
