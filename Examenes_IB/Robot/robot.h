@@ -16,14 +16,13 @@ namespace robot {
      void GirarDerecha();
      void GirarIzquierda();
      void Avanzar();
+     void EjecutaSecuencia(string);
+     
      // Getters
      inline string GetNombre() const { return nombre_; }
      inline Point2D GetPosicion() const { return posicion_; }
-     inline Direccion GetDireccion () const { return direccion_; }
+     inline Direccion GetDireccion() const { return direccion_; }
      inline int GetCansancio() const { return cansancio_; }
-
-     // Sobrecarga de operadores
-     friend ostream& operator<<(ostream& os, const Robot& robot);
     
     private:
     string nombre_;
@@ -32,3 +31,5 @@ namespace robot {
     int cansancio_;
   };
 }
+
+ostream& operator<<(ostream& os, const robot::Robot& type);
