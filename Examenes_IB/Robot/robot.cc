@@ -57,25 +57,32 @@ void robot::Robot::GirarIzquierda() {
   }
 }
 
+/**
+ * @brief Función para que el robot avance
+*/
+
 void robot::Robot::Avanzar() {
   int eje_x = posicion_.GetX();
   int eje_y = posicion_.GetY();
 
   switch (direccion_) {
     case Direccion::NORTE:
-      posicion_.SetY(eje_y++);
+      eje_y++;
+      posicion_.SetY(eje_y);
       break;
     case Direccion::SUR:
-      posicion_.SetY(eje_y--);
+      eje_y--;
+      posicion_.SetY(eje_y);
       break;
     case Direccion::ESTE:
-      posicion_.SetX(eje_x++);
+      eje_x++;
+      posicion_.SetX(eje_x);
       break;
     case Direccion::OESTE:
-      posicion_.SetX(eje_x--);
+      eje_x--;
+      posicion_.SetX(eje_x);
       break;
   }
-  
   cansancio_++;
 }
 
