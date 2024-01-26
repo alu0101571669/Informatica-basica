@@ -12,8 +12,8 @@ class Point2D {
    inline int GetY() const { return coordenada_y_; }
 
    // Setters
-   inline void SetX(int x) { coordenada_x_ = x; }
-   inline void SetY(int y) { coordenada_y_ = y; }
+   inline void SetX(const int x) { coordenada_x_ = x; }
+   inline void SetY(const int y) { coordenada_y_ = y; }
    
    // Sobrecarga de operadores
    friend ostream& operator<<(ostream& os, const Point2D& point);
